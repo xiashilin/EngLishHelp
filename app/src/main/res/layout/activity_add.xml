@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ev_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="请输入笔记标题" />
+
+    <EditText
+        android:id="@+id/ev_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_400"
+        android:gravity="top"
+        android:hint="请输入笔记内容"
+        android:maxEms="10"
+        android:minEms="10" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/rounded_button"
+        android:text="提交笔记"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_max" />
+</LinearLayout>
